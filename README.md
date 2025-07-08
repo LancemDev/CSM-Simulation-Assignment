@@ -73,3 +73,15 @@ The simulation generates the following output files in the specified output dire
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Troubleshooting
+
+### StopIteration or Unexpected Simulation Exit
+
+If the simulation prints a warning like:
+
+```
+[Warning] No customer found departing at time X.XXXXXX. Skipping departure event.
+```
+
+This means the simulation encountered an unexpected event scheduling issue (e.g., a departure event was scheduled when no customer was actually departing at that time). The simulation will exit gracefully instead of crashing. If you see this message frequently, please check your simulation parameters or open an issue for further investigation.
