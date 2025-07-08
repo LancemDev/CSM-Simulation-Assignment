@@ -1,0 +1,9 @@
+{
+  "total_waiting_time": 835.1627648869777,
+  "total_system_time": 2576.298239335636,
+  "max_queue_length": 4,
+  "server_utilization": 77.52158943397772,
+  "busy_time": 1741.1354744486584,
+  "average_waiting_time": 1.6703255297739554,
+  "average_system_time": 5.152596478671272
+}

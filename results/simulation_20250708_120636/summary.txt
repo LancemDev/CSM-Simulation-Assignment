@@ -1,0 +1,19 @@
+Bank Queue Simulation Results
+==================================================
+
+Number of customers: 500
+Random seed: None
+Simulation time: 2025-07-08 12:06:37
+
+Key Metrics:
+--------------------
+Average Waiting Time: 1.67 minutes
+Average System Time: 5.15 minutes
+Server Utilization: 77.52%
+Maximum Queue Length: 4 customers
+
+Visualizations Generated:
+-------------------------
+- metrics_summary: metrics_summary.png
+- waiting_time_distribution: waiting_time_distribution.png
+- queue_length_over_time: queue_length_over_time.png

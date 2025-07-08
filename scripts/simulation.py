@@ -126,10 +126,15 @@ class BankQueueSimulation:
             else:
                 # Process departure
                 current_customer = next(
-                    c for c in self.customers 
-                    if abs(c.departure_time - self.clock) < 1e-6
+                    (c for c in self.customers 
+                     if abs(c.departure_time - self.clock) < 1e-6),
+                    None
                 )
-                self.handle_departure(current_customer)
+                if current_customer is not None:
+                    self.handle_departure(current_customer)
+                else:
+                    print(f"[Warning] No customer found departing at time {self.clock:.6f}. Skipping departure event.")
+                    break
             
             # Update next event time
             self.next_event_time = min(self.next_arrival, self.next_departure)
