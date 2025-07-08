@@ -23,7 +23,7 @@ This project simulates a single-server queue system for a bank using discrete-ev
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/LancemDev/CSM-Simulation-Assignment.git
    cd CSM-Simulation-Assignment
    ```
 
